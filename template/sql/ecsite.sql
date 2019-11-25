@@ -1,10 +1,10 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists template;
+drop database if exists template_kihara;
 
 
-create database if not exists template;
-use template;
+create database if not exists template_kihara;
+use template_kihara;
 
 drop table if exists login_user_transaction;
 
@@ -31,9 +31,9 @@ create table item_info_transaction(
 );
 
 
-dorp table if exists user_buy_item_transaction;
+drop table if exists user_buy_item_transaction;
 
-create table user_ buy_item_transaction(
+create table user_buy_item_transaction(
 	id int not null primary key auto_increment,
 	item_transaction_id int,
 	total_price int,
