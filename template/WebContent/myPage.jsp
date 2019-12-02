@@ -55,7 +55,7 @@
 		</s:form>
 	</s:if>
 
-	<s:if test="session.message ! = null">
+	<s:if test="session.message != null">
 		<h3><s:property value="session.message" /></h3>
 	</s:if>
 
