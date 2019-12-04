@@ -6,12 +6,12 @@
 
 <!-- Strutsの詳細設定 -->
 
-<sturts>
+<struts>
 
 	<constant name="struts.devMode" value="true" />
 	<package name="com.internousdev.ecsite.action" extends="struts-default">
 
-		<!-- CoHomeAction -->
+		<!-- GoHomeAction -->
 <!-- 		<action name="GoHomeAction" -->
 <!-- 		class="com.internousdev.ecsite.action.GoHomeAction" method="execute"> -->
 <!-- 			<result name="success">home.jsp</result> -->
@@ -19,11 +19,11 @@
 
 
 		<!-- HomeAction -->
-<!-- 		<action name="HomeAction" class="com.internousdev.ecsite.action.HomeAction" -->
-<!-- 		method="execute"> -->
-<!-- 			<result name="login">login.jsp</result> -->
-<!-- 			<result name="success">buyItem.jsp</result> -->
-<!-- 		</action> -->
+		<action name="HomeAction" class="com.internousdev.ecsite.action.HomeAction"
+		method="execute">
+			<result name="login">login.jsp</result>
+			<result name="success">buyItem.jsp</result>
+		</action>
 
 
 		<!-- LoginAction -->
@@ -81,4 +81,4 @@
 
 
 	</package>
-</sturts>
+</struts>
