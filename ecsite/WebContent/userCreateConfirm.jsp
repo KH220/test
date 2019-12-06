@@ -57,7 +57,7 @@
 
 				<tr>
 					<td>
-						<s:submit value="終了" />
+						<s:submit value="完了" />
 					</td>
 				</tr>
 				</s:form>

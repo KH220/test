@@ -1,10 +1,10 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists ecsite;
+drop database if exists ecsite_kihara;
 
 
-create database if not exists ecsite;
-use ecsite;
+create database if not exists ecsite_kihara;
+use ecsite_kihara;
 
 
 drop table if exists login_user_transaction;
