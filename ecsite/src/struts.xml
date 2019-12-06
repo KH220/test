@@ -12,10 +12,10 @@
 	<package name="com.internousdev.ecsite.action" extends="struts-default">
 
 		<!-- GoHomeAction -->
-<!-- 		<action name="GoHomeAction" -->
-<!-- 		class="com.internousdev.ecsite.action.GoHomeAction" method="execute"> -->
-<!-- 			<result name="success">home.jsp</result> -->
-<!-- 		</action> -->
+		<action name="GoHomeAction"
+		class="com.internousdev.ecsite.action.GoHomeAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
 
 
 		<!-- HomeAction -->
@@ -27,26 +27,26 @@
 
 
 		<!-- LoginAction -->
-<!-- 		<action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction" -->
-<!-- 		method="execute"> -->
-<!-- 			<result name="success">buyitem.jsp</result> -->
-<!-- 			<result name="error">login.jsp</result> -->
-<!-- 		</action> -->
+		<action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction"
+		method="execute">
+			<result name="success">buyItem.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
 
 
 		<!-- UserCreateAction -->
-<!-- 		<action name="UserCreateAction" -->
-<!-- 		class="com.internousdev.ecsite.action.UserCreateAction" method="execute"> -->
-<!-- 			<result name="success">userCreate.jsp</result> -->
-<!-- 		</action> -->
+		<action name="UserCreateAction"
+		class="com.internousdev.ecsite.action.UserCreateAction" method="execute">
+			<result name="success">userCreate.jsp</result>
+		</action>
 
 
 		<!-- UserCreateConfirmAction -->
-<!-- 		<action name="UserCreateAction" -->
-<!-- 		class="com.internousdev.ecsite.action.UserCreateConfirmAction" method="execute"> -->
-<!-- 			<result name="success">userCreateConfirm.jsp</result> -->
-<!-- 			<result name="error">userCreate.jsp</result> -->
-<!-- 		</action> -->
+		<action name="UserCreateAction"
+		class="com.internousdev.ecsite.action.UserCreateConfirmAction" method="execute">
+			<result name="success">userCreateConfirm.jsp</result>
+			<result name="error">userCreate.jsp</result>
+		</action>
 
 
 		<!-- UserCreateCompleteAction -->
