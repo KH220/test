@@ -39,7 +39,7 @@
 
 				<tr>
 					<td>値段</td>
-					<td><s:property value="session.total._price" /><span>円</span></td>
+					<td><s:property value="session.total_price" /><span>円</span></td>
 				</tr>
 
 				<tr>
@@ -57,10 +57,8 @@
 				</tr>
 
 				<tr>
-					<td><input type="button" value="戻る"
-						onclick="submitAction('HomeAction')" /></td>
-					<td><input type="button" value="完了"
-						onclick="submitAction('BuyItemConfirmAction')" /></td>
+					<td><input type="button" value="戻る" onclick="submitAction('HomeAction')"/></td>
+					<td><input type="button" value="完了" onclick="submitAction('BuyItemConfirmAction')"/></td>
 				</tr>
 			</s:form>
 
