@@ -2,6 +2,7 @@ package com.internousdev.ecsite.action;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
@@ -14,7 +15,7 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 
 	private Map<String, Object> session;
 	private MyPageDAO myPageDAO = new MyPageDAO();
-	private ArrayList<MyPageDTO> myPageList = new ArrayList<MyPageDTO>();
+	private List<MyPageDTO> myPageList = new ArrayList<MyPageDTO>();
 	private String deleteFlg;
 	private String message;
 
@@ -53,23 +54,28 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 			this.deleteFlg = deleteFlg;
 		}
 
-		public ArrayList<MyPageDTO> getMyPageList() {
+
+		@Override
+		public void setSession(Map<String, Object> session) {
+			this.session = session;
+		}
+
+		public List<MyPageDTO> getMyPageList() {
 			return this.myPageList;
 		}
+
+
+
+		public Map<String,Object> getSession() {
+			return this.session;
+		}
+
+
 
 		public String getMessage() {
 			return this.message;
 		}
 		public void setMessage(String message) {
 			this.message = message;
-		}
-
-		public Map<String,Object> getSession() {
-			return this.session;
-		}
-
-		@Override
-		public void setSession(Map<String, Object> session) {
-			this.session = session;
 		}
 }

@@ -24,7 +24,7 @@
 		</div>
 
 		<div>
-			<s:if test="errorMessage != ">
+			<s:if test="errorMessage != ''">
 				<s:property value="errorMessage" escape="false" />
 			</s:if>
 
